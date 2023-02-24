@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* div {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        p.center, 
+        div.center, 
+        h2.center {
+            text-align: center;
+        } */
+
+        /* .parent p {
+            background-color: yellow;
+        } */
+
+        /* .parent > p {
+            background-color: rebeccapurple;
+        } */
+
+        /* div + p {
+            background-color: antiquewhite;
+        } */
+
+        /* div ~ p {
+            background-color: antiquewhite;
+        } */
+
+        .parent ~ p {
+            background-color: antiquewhite;
+        }
+
+        .container {
+            height: 100vh;
+            background-color: blueviolet;
+            opacity: 0.7;
+        }
+        .img{
+            height: 100%;
+            background: url(https://imgd.aeplcdn.com/1280x720/n/cw/ec/102709/ntorq-125-right-front-three-quarter.jpeg?isig=0&q=80);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Simple Selectors</h1>
+    <div class="center">
+        this is div
+    </div>
+    <p class="center">This is para 1</p>
+    <p class="center">This is para 2</p>
+    <p class="center">This is para 3</p>
+    <p class="center">This is para 4</p>
+    <h2 class="center">This is heading</h2> -->
+
+    <h1>Combinator Selectors</h1>
+    <div class="parent">
+        <p>This is parent para</p> <!--vanshika-->
+        <div>This is first child</div>
+        <div>This is secont Child</div>
+        <p>This is para 1</p> <!--vanshika suhani kapil-->
+        <div>This is third child</div>
+        <p>This is para 2</p> <!--vanshika suhani kapil-->
+        <section>
+            <p>This is section para 1</p> <!-- ajay -->
+            <div>this is section div</div>
+            <p>This is section para 2</p> <!--vanshika suhani kapil-->
+        </section>
+        <p>This is para 3</p> <!-- ajay kapil-->
+        <div>This id fourth child</div>
+    </div>
+    <p>This is parent sibling</p>
+
+    <section>
+        <div class="container">
+            <div class="img"></div>
+        </div>
+    </section>
+</body>
+</html>
